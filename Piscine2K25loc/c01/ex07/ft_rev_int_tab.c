@@ -1,28 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_div_mod.c                                       :+:      :+:    :+:   */
+/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/10 15:59:17 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/10 18:06:04 by tcolson          ###   ########.fr       */
+/*   Created: 2025/07/10 17:41:58 by tcolson           #+#    #+#             */
+/*   Updated: 2025/07/12 15:12:54 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-void	ft_div_mod(int a, int b, int *div, int *mod)
+void ft_rev_int_tab(int *tab, int size)
 {
-	*div = a / b;
-	*mod = a % b;
+	int		i;
+	char	*ch;
+
+	i=0;
+	while (i <= (size / 2))
+	{
+		ch[i] = tab[i];
+		tab[i] = tab[size - 1 - i];
+		tab[size - 1 - i] = ch[i];
+	}
+
+	//while (tab[i] != '\0')
+	//{
+	//tab[i] = tab[size - i];
+	//	tab[size - i] = ch[i];
+	//}
 }
 
 int main(int argc, char const *argv[])
 {
-	int div,mod;
-	div = 5;
-	mod = 5;
-	ft_div_mod(62, 10, &div, &mod);
-	printf("div : %d, mod : %d", div, mod);
+	int *tab = {0, 1, 2, 3, 4, 5, 6, 7, 8};
+	ft_rev_int_tab(&tab, 9);
+	printf("%d", &tab[0]);
 	return 0;
 }

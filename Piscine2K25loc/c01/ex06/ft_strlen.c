@@ -1,28 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_div_mod.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/10 15:59:17 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/10 18:06:04 by tcolson          ###   ########.fr       */
+/*   Created: 2025/07/10 17:18:42 by tcolson           #+#    #+#             */
+/*   Updated: 2025/07/10 17:41:17 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-void	ft_div_mod(int a, int b, int *div, int *mod)
+int	ft_strlen(char *str)
 {
-	*div = a / b;
-	*mod = a % b;
-}
+	int	i;
 
-int main(int argc, char const *argv[])
-{
-	int div,mod;
-	div = 5;
-	mod = 5;
-	ft_div_mod(62, 10, &div, &mod);
-	printf("div : %d, mod : %d", div, mod);
-	return 0;
+	i = 0;
+	while (str[i] != '\0')
+	{
+		i ++;
+	}
+	return (i);
 }

@@ -1,28 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_div_mod.c                                       :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/10 15:59:17 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/10 18:06:04 by tcolson          ###   ########.fr       */
+/*   Created: 2025/07/12 15:18:59 by tcolson           #+#    #+#             */
+/*   Updated: 2025/07/12 17:17:33 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 
-void	ft_div_mod(int a, int b, int *div, int *mod)
-{
-	*div = a / b;
-	*mod = a % b;
-}
+void	rush(int x, int y);
 
 int main(int argc, char const *argv[])
 {
-	int div,mod;
-	div = 5;
-	mod = 5;
-	ft_div_mod(62, 10, &div, &mod);
-	printf("div : %d, mod : %d", div, mod);
-	return 0;
+	//rush(3, 5);
+	rush(argv[1][0]/10, argv[2][0]/10);
+	return (0);
 }
