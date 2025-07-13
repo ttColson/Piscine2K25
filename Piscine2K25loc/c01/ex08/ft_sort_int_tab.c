@@ -1,37 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
+/*   ft_sort_int_tab.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/10 17:41:58 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/13 11:08:44 by tcolson          ###   ########.fr       */
+/*   Created: 2025/07/13 11:09:09 by tcolson           #+#    #+#             */
+/*   Updated: 2025/07/13 18:19:00 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdlib.h>
 
-void	ft_rev_int_tab(int *tab, int size)
+void ft_sort_int_tab(int *tab, int size)
 {
-	int	i;
-	int	temp;
+	int i;
+	int j;
+	int temp;
 
-	i = 0;
-	while (i <= (size / 2))
-	{
-		temp = tab[i];
-		tab[i] = tab[size - i - 1];
-		tab[size - i - 1] = temp;
-		i ++;
+	i=0;
+	j=0;
+	while (i < size) {
+		j = 0;
+		while (j < size - 1) {
+			if (tab[j] > tab[j+1]) {
+				temp = tab[j];
+				tab[j] = tab[j+1];
+				tab[j+1] = temp;
+			}
+			j++;
+		}
+		i++;
 	}
 }
 
 /*
 int main()
 {
-	int tab[] = {17, 1, 2, 3, 4, 5, 6, 7, 8};
-	ft_rev_int_tab(tab, 9);
+	int tab[] = {17, 15, 22, 3, 5, 4, 6, 7, 8};
+	ft_sort_int_tab(tab, 9);
 	for (int i = 0; i < 9; i++)
 		printf("%d, ", tab[i]);
 	return 0;
