@@ -6,17 +6,27 @@
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 10:01:17 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/12 09:46:43 by tcolson          ###   ########.fr       */
+/*   Updated: 2025/07/14 15:27:36 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
+int	ft_trad(int n)
+{
+	return ('0' + n);
+}
+
+void	ft_print(int n)
+{
+	n = ft_trad(n);
+	write(1, &n, 1);
+}
+
 void	ft_print_comb2(void)
 {
 	int	x;
 	int	y;
-	int	buffer;
 
 	x = 0;
 	y = x + 1;
@@ -38,20 +48,9 @@ void	ft_print_comb2(void)
 	}
 }
 
-int	ft_trad(int n)
-{
-	return ('0' + n);
-}
-
-void	ft_print(int n)
-{
-	n = ft_trad(n);
-	write(1, &n, 1);
-}
-
 /*
 int main() {
 	ft_print_comb2();
 	return 0;
 }
-	*/
+*/

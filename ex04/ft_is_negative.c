@@ -6,7 +6,7 @@
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 11:27:02 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/14 09:54:19 by tcolson          ###   ########.fr       */
+/*   Updated: 2025/07/14 15:24:59 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	ft_is_negative(int n)
 }
 
 /*
-int main(int argc, char const *argv[])
+int main()
 {
 	ft_is_negative(-1);
 	ft_is_negative(5);

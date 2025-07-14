@@ -6,7 +6,7 @@
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 11:27:05 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/14 09:54:34 by tcolson          ###   ########.fr       */
+/*   Updated: 2025/07/14 15:25:04 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void	ft_print_comb(void)
 }
 
 /*
-int main(int argc, char const *argv[])
+int main()
 {
 	ft_print_comb();
 	return 0;

@@ -6,11 +6,26 @@
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 14:43:15 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/12 12:28:40 by tcolson          ###   ########.fr       */
+/*   Updated: 2025/07/14 15:27:28 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
+int	ft_trad(int n)
+{
+	return ('0' + n);
+}
+
+void	ft_print(int n)
+{
+	if (n < 0)
+	{
+		n = n * (-1);
+	}
+	n = ft_trad(n);
+	write(1, &n, 1);
+}
 
 void	ft_putnbr(int nb)
 {
@@ -38,28 +53,10 @@ void	ft_putnbr(int nb)
 		ft_print(nb);
 }
 
-int	ft_trad(int n)
-{
-	return ('0' + n);
-}
-
-void	ft_print(int n)
-{
-	if (n < 0)
-	{
-		n = n * (-1);
-	}
-	n = ft_trad(n);
-	write(1, &n, 1);
-}
-
 /*
-int main(int argc, char const *argv[])
+int main()
 {
-	int mod = 1000000000;
 	int n = -2147483647;
-	int x;
-
 	ft_putnbr(n);
 	return 0;
 }

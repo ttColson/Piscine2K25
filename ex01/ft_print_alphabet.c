@@ -6,7 +6,7 @@
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 11:26:49 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/14 09:46:47 by tcolson          ###   ########.fr       */
+/*   Updated: 2025/07/14 15:24:39 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	ft_print_alphabet(void)
 }
 
 /*
-int main(int argc, char const *argv[])
+int main()
 {
 	ft_print_alphabet();
 	return 0;

@@ -6,7 +6,7 @@
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 11:26:53 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/14 09:55:03 by tcolson          ###   ########.fr       */
+/*   Updated: 2025/07/14 15:24:50 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	ft_print_reverse_alphabet(void)
 }
 
 /*
-int main(int argc, char const *argv[])
+int main()
 {
 	ft_print_reverse_alphabet();
 	return 0;
