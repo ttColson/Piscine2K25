@@ -6,11 +6,24 @@
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 14:52:44 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/10 17:16:44 by tcolson          ###   ########.fr       */
+/*   Updated: 2025/07/14 10:07:23 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <unistd.h>
 
 void	ft_ft(int *nbr)
 {
 	*nbr = 42;
 }
+
+/*
+int main(int argc, char const *argv[])
+{
+	int n = 5;
+	printf("%d\n", n);
+	ft_ft(&n);
+	printf("%d\n", n);
+	return 0;
+}
+*/

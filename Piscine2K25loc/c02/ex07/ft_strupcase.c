@@ -1,22 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strupcase.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/12 15:18:59 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/13 18:21:45 by tcolson          ###   ########.fr       */
+/*   Created: 2025/07/14 11:41:03 by tcolson           #+#    #+#             */
+/*   Updated: 2025/07/14 12:04:26 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	rush(int x, int y);
+char	*ft_strupcase(char *str)
+{
+	int	i;
 
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if ((str[i] >= 'a' && str[i] <= 'z'))
+			str[i] -= ('a' - 'A');
+		i ++;
+	}
+	return (&str);
+}
+
+/*
 int main(int argc, char const *argv[])
 {
-	//rush(3, 5);
-	//if (argv[1][0] <= '0' && argv[1][0] >= '9')
-	return (0);
+	char str[] = "toto";
+	printf("%s\n", str);
+	ft_strupcase(str);
+	printf("%s\n", str);
+	return 0;
 }
+*/

@@ -6,10 +6,11 @@
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 15:59:17 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/10 18:06:04 by tcolson          ###   ########.fr       */
+/*   Updated: 2025/07/14 10:19:34 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 
 void	ft_div_mod(int a, int b, int *div, int *mod)
 {
@@ -17,6 +18,7 @@ void	ft_div_mod(int a, int b, int *div, int *mod)
 	*mod = a % b;
 }
 
+/*
 int main(int argc, char const *argv[])
 {
 	int div,mod;
@@ -26,3 +28,4 @@ int main(int argc, char const *argv[])
 	printf("div : %d, mod : %d", div, mod);
 	return 0;
 }
+*/

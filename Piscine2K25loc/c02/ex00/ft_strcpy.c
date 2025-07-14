@@ -1,22 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/12 15:18:59 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/13 18:21:45 by tcolson          ###   ########.fr       */
+/*   Created: 2025/07/14 10:29:10 by tcolson           #+#    #+#             */
+/*   Updated: 2025/07/14 10:39:31 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+char	*ft_strcpy(char *dest, char *src)
+{
+	int	i;
 
-void	rush(int x, int y);
+	i = 0;
+	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i ++;
+	}
+	return (&dest);
+}
 
+/*
 int main(int argc, char const *argv[])
 {
-	//rush(3, 5);
-	//if (argv[1][0] <= '0' && argv[1][0] >= '9')
-	return (0);
+	char str1[] = "hello";
+	char str2[] = "world";
+	printf("%s %s\n", str1, str2);
+	ft_strcpy(str2, str1);
+	printf("%s %s\n", str1, str2);
+	return 0;
 }
+*/

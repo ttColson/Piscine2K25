@@ -1,22 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/12 15:18:59 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/13 18:21:45 by tcolson          ###   ########.fr       */
+/*   Created: 2025/07/14 12:18:05 by tcolson           #+#    #+#             */
+/*   Updated: 2025/07/14 12:20:22 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	rush(int x, int y);
-
-int main(int argc, char const *argv[])
+int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	//rush(3, 5);
-	//if (argv[1][0] <= '0' && argv[1][0] >= '9')
+	int	i;
+
+	i = 0;
+	while (i < n)
+	{
+		if (s1[i] < s2[i])
+			return (-1);
+		if (s1[i] > s2[i])
+			return (1);
+		i ++;
+	}
 	return (0);
 }
+
+/*
+int main(int argc, char const *argv[])
+{
+	char *str1 = "toto";
+	char *str2 = "totoO";
+	int n = ft_strncmp(str1, str2, 2);
+	printf("%d", n);
+	return 0;
+}
+*/

@@ -1,22 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/12 15:18:59 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/13 18:21:45 by tcolson          ###   ########.fr       */
+/*   Created: 2025/07/14 10:39:57 by tcolson           #+#    #+#             */
+/*   Updated: 2025/07/14 10:55:55 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	rush(int x, int y);
+char	*ft_strncpy(char *dest, char *src, unsigned int n)
+{
+	int	i;
+	int	end;
 
+	i = 0;
+	end = 0;
+	while (i < n)
+	{
+		if (src[i] == '\0')
+			end = 1;
+		if (!end)
+			dest[i] = src[i];
+		else
+			dest[i] = '\0';
+		i ++;
+	}
+	return (&dest);
+}
+
+/*
 int main(int argc, char const *argv[])
 {
-	//rush(3, 5);
-	//if (argv[1][0] <= '0' && argv[1][0] >= '9')
-	return (0);
+	char str1[] = "hello";
+	char str2[] = "worlddd";
+	printf("%s %s\n", str1, str2);
+	ft_strncpy(str2, str1, 8);
+	printf("%s %s\n", str1, str2);
+	return 0;
 }
+*/

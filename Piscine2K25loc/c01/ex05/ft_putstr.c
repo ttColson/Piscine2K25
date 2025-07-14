@@ -6,7 +6,7 @@
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 16:09:03 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/10 18:05:31 by tcolson          ###   ########.fr       */
+/*   Updated: 2025/07/14 10:23:06 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,11 @@ void	ft_putstr(char *str)
 		i ++;
 	}
 }
+
+/*
+int main(int argc, char const *argv[])
+{
+	ft_putstr("toto");
+	return 0;
+}
+*/
