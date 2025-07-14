@@ -6,18 +6,28 @@
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 11:26:49 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/09 11:56:13 by tcolson          ###   ########.fr       */
+/*   Updated: 2025/07/14 09:46:47 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_print_reverse_alphabet(void)
+#include <unistd.h>
+
+void	ft_print_alphabet(void)
 {
 	int	i;
 
-	i = 0;
+	i = 96;
 	while (i < 123)
 	{
 		write(1, &i, 1);
 		i ++;
 	}
 }
+
+/*
+int main(int argc, char const *argv[])
+{
+	ft_print_alphabet();
+	return 0;
+}
+*/

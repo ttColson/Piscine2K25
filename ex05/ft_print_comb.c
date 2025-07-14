@@ -6,9 +6,11 @@
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 11:27:05 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/10 10:00:02 by tcolson          ###   ########.fr       */
+/*   Updated: 2025/07/14 09:54:34 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <unistd.h>
 
 void	ft_print_comb(void)
 {
@@ -37,3 +39,11 @@ void	ft_print_comb(void)
 		x ++;
 	}
 }
+
+/*
+int main(int argc, char const *argv[])
+{
+	ft_print_comb();
+	return 0;
+}
+*/
