@@ -6,7 +6,7 @@
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 14:15:39 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/14 15:07:09 by tcolson          ###   ########.fr       */
+/*   Updated: 2025/07/15 10:01:34 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ int	ft_char_is_alpha(char c)
 
 	i = 0;
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+		return (1);
+	if (c >= '0' && c <= '9')
 		return (1);
 	return (0);
 }
@@ -46,11 +48,9 @@ char	*ft_strcapitalize(char *str)
 	return (str);
 }
 
-/*
-int main(int argc, char const *argv[])
-{
-	char str[] = "hi, hOw ARE you? 42words forty-two; fifty+and+one";
-	printf("%s", ft_strcapitalize(str));
-	return 0;
-}
-*/
+// int main(int argc, char const *argv[])
+// {
+// 	char str[] = "hi, hOw ARE you? 42words forty-two; fifty+and+one";
+// 	printf("%s", ft_strcapitalize(str));
+// 	return 0;
+// }
