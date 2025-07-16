@@ -1,36 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/14 12:03:05 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/16 12:12:27 by tcolson          ###   ########.fr       */
+/*   Created: 2025/07/15 14:20:59 by tcolson           #+#    #+#             */
+/*   Updated: 2025/07/15 14:23:42 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-char	*ft_strlowcase(char *str)
+int	ft_strlen(char *str)
 {
 	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (str[i])
 	{
-		if ((str[i] >= 'A' && str[i] <= 'Z'))
-			str[i] += ('a' - 'A');
 		i ++;
 	}
-	return (&str);
+	return (i);
 }
 
 // int main(int argc, char const *argv[])
 // {
-// 	char str[] = "TOTO";
-// 	printf("%s\n", str);
-// 	ft_strlowcase(str);
-// 	printf("%s\n", str);
+// 	char str[] = "helloworld";
+// 	printf("%d", ft_strlen(str));
 // 	return 0;
 // }

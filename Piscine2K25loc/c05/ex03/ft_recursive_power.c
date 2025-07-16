@@ -1,36 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
+/*   ft_recursive_power.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/14 12:03:05 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/16 12:12:27 by tcolson          ###   ########.fr       */
+/*   Created: 2025/07/16 13:53:21 by tcolson           #+#    #+#             */
+/*   Updated: 2025/07/16 14:44:16 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-char	*ft_strlowcase(char *str)
+int	ft_recursive_pow(int nb, int power, int v)
 {
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if ((str[i] >= 'A' && str[i] <= 'Z'))
-			str[i] += ('a' - 'A');
-		i ++;
-	}
-	return (&str);
+	if (power == 1)
+		return(nb);
+	return (ft_recursive_pow(nb * nb, power - 1, v));
 }
 
-// int main(int argc, char const *argv[])
-// {
-// 	char str[] = "TOTO";
-// 	printf("%s\n", str);
-// 	ft_strlowcase(str);
-// 	printf("%s\n", str);
-// 	return 0;
-// }
+int	ft_recursive_power(int nb, int power)
+{
+	if (power == 0)
+		return (1);
+	if (power < 0)
+		return (0);
+	return (ft_recursive_pow(nb, power - 1, nb));
+}
+
+int main(int argc, char const *argv[])
+{
+	
+	return 0;
+}

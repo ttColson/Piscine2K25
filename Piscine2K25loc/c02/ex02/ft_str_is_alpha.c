@@ -6,7 +6,7 @@
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 10:56:24 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/14 11:29:09 by tcolson          ###   ########.fr       */
+/*   Updated: 2025/07/16 12:09:18 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,10 @@ int	ft_str_is_alpha(char *str)
 	return (1);
 }
 
-/*
-int main(int argc, char const *argv[])
-{
-	char *str = "Toto";
-	int n = ft_str_is_alpha(str);
-	printf("%d", n);
-	return 0;
-}
-*/
+// int main(int argc, char const *argv[])
+// {
+// 	char *str = "TotoAZaz";
+// 	int n = ft_str_is_alpha(str);
+// 	printf("%d", n);
+// 	return 0;
+// }

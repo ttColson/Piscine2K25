@@ -6,7 +6,7 @@
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 11:41:03 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/14 12:04:26 by tcolson          ###   ########.fr       */
+/*   Updated: 2025/07/16 12:11:56 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,11 @@ char	*ft_strupcase(char *str)
 	return (&str);
 }
 
-/*
-int main(int argc, char const *argv[])
-{
-	char str[] = "toto";
-	printf("%s\n", str);
-	ft_strupcase(str);
-	printf("%s\n", str);
-	return 0;
-}
-*/
+// int main(int argc, char const *argv[])
+// {
+// 	char str[] = "toto";
+// 	printf("%s\n", str);
+// 	ft_strupcase(str);
+// 	printf("%s\n", str);
+// 	return 0;
+// }

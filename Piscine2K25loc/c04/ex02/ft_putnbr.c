@@ -1,43 +1,60 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcncat.c                                      :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/14 12:34:16 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/15 13:21:04 by tcolson          ###   ########.fr       */
+/*   Created: 2025/07/15 14:32:17 by tcolson           #+#    #+#             */
+/*   Updated: 2025/07/16 09:42:34 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-char	*ft_strncat(char *dest, char *src, unsigned int nb)
+int	ft_trad(int n)
 {
-	int	i;
-	int	j;
-
-	i = 0;
-	j = 0;
-	while (dest[i] != '\0')
-	{
-		i ++;
-	}
-	while (j < nb)
-	{
-		dest[i + j] = src[j];
-		j ++;
-	}
-	return (dest);
+	return ('0' + n);
 }
 
+void	ft_print(int n)
+{
+	if (n < 0)
+	{
+		n = n * (-1);
+	}
+	n = ft_trad(n);
+	write(1, &n, 1);
+}
+
+void	ft_putnbr(int nb)
+{
+	int	x;
+	int	div;
+
+	div = 1000000000;
+	x = '-';
+	if (nb < 0)
+		write(1, &x, 1);
+	x = (nb / div) % 10;
+	while (x == 0 && nb != 0)
+	{
+		div = div / 10;
+		x = (nb / div) % 10;
+	}
+	while (div >= 1 && nb != 0)
+	{
+		ft_print(x);
+		div = div / 10;
+		if (div != 0)
+			x = (nb / div) % 10;
+	}
+	if (nb == 0)
+		ft_print(nb);
+}
 
 int main(int argc, char const *argv[])
 {
-	char str1[50] = "hello";
-	char str2[] = " world !";
-	printf("%s\n", str1);
-	printf("%s\n", ft_strncat(str1, str2, 10));
-	printf("%s\n", str1);
+	ft_putnbr(42);
 	return 0;
 }

@@ -6,7 +6,7 @@
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 11:09:09 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/14 10:27:00 by tcolson          ###   ########.fr       */
+/*   Updated: 2025/07/16 11:39:55 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,13 +37,11 @@ void	ft_sort_int_tab(int *tab, int size)
 	}
 }
 
-/*
-int main()
-{
-	int tab[] = {17, 15, 22, 3, 5, 4, 6, 7, 8};
-	ft_sort_int_tab(tab, 9);
-	for (int i = 0; i < 9; i++)
-		printf("%d, ", tab[i]);
-	return 0;
-}
-*/
+// int main()
+// {
+// 	int tab[] = {17, 15, 22, 3, 5, 4, 6, 7, 8};
+// 	ft_sort_int_tab(tab, 9);
+// 	for (int i = 0; i < 9; i++)
+// 		printf("%d, ", tab[i]);
+// 	return 0;
+// }

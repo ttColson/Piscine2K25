@@ -1,36 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
+/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/14 12:03:05 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/16 12:12:27 by tcolson          ###   ########.fr       */
+/*   Created: 2025/07/16 09:47:56 by tcolson           #+#    #+#             */
+/*   Updated: 2025/07/16 11:01:44 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-char	*ft_strlowcase(char *str)
+int	ft_iterative_factorial(int nb)
 {
 	int	i;
+	int	n;
+	int minus;
 
+	n = 1;
 	i = 0;
-	while (str[i] != '\0')
+	minus = 0;
+	if (nb < 0)
 	{
-		if ((str[i] >= 'A' && str[i] <= 'Z'))
-			str[i] += ('a' - 'A');
+		minus = 1;
+		nb *= -1;
+	}
+	while (i < nb)
+	{
+		n *= nb - i;
 		i ++;
 	}
-	return (&str);
+	if (minus)
+		return(n * -1);
+	return (n);
 }
 
-// int main(int argc, char const *argv[])
-// {
-// 	char str[] = "TOTO";
-// 	printf("%s\n", str);
-// 	ft_strlowcase(str);
-// 	printf("%s\n", str);
-// 	return 0;
-// }
+int main(int argc, char const *argv[])
+{
+	printf("%d", ft_iterative_factorial(-9));
+	return 0;
+}

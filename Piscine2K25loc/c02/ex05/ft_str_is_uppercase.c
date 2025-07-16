@@ -6,7 +6,7 @@
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 11:33:37 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/14 11:38:12 by tcolson          ###   ########.fr       */
+/*   Updated: 2025/07/16 12:11:06 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,10 @@ int	ft_str_is_uppercase(char *str)
 	return (1);
 }
 
-/*
-int main(int argc, char const *argv[])
-{
-	char *str = "TOTO";
-	int n = ft_str_is_uppercase(str);
-	printf("%d", n);
-	return 0;
-}
-*/
+// int main(int argc, char const *argv[])
+// {
+// 	char *str = "TOTO";
+// 	int n = ft_str_is_uppercase(str);
+// 	printf("%d", n);
+// 	return 0;
+// }
