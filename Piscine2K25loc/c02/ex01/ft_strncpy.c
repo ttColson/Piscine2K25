@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
+/*   By: tcolson <tcolson@student.42lehavre.fr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 10:39:57 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/16 12:07:32 by tcolson          ###   ########.fr       */
+/*   Updated: 2025/07/17 16:48:00 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,15 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	while (i < n - 1)
 	{
 		if (src[i] == '\0')
-			end = 1;
-		if (!end)
-			dest[i] = src[i];
+		{
+			dest[n] == '\0';
+			return (&dest);
+		}
 		else
-			dest[n] = '\0';
+			dest[i] = src[i];
 		i ++;
 	}
-	return (&dest);
+	return (dest);
 }
 
 // int main(int argc, char const *argv[])

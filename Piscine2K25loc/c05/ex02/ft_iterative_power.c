@@ -6,7 +6,7 @@
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 12:57:33 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/16 13:56:58 by tcolson          ###   ########.fr       */
+/*   Updated: 2025/07/16 14:47:36 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ int	ft_iterative_power(int ab, int power)
 	return (n);
 }
 
-int main(int argc, char const *argv[])
-{
-	printf("%d", ft_iterative_power(-3, 0));
-	return 0;
-}
+// int main(int argc, char const *argv[])
+// {
+// 	printf("%d", ft_iterative_power(-3, 0));
+// 	return 0;
+// }

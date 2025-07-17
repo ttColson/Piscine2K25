@@ -6,7 +6,7 @@
 /*   By: tcolson <tcolson@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 14:37:55 by tcolson           #+#    #+#             */
-/*   Updated: 2025/07/16 09:52:44 by tcolson          ###   ########.fr       */
+/*   Updated: 2025/07/16 15:22:27 by tcolson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ int	ft_atoi(char *str)
 	n = 0;
 	if (str[0] + str[1] + str[2] != 3 * ' ' || (str[3] != '-' && str[3] != '+'))
 		return (n);
+		// on s'en fiche des espaces
 	while (scan)
 	{
 		if (str[i] == '-')
@@ -39,8 +40,8 @@ int	ft_atoi(char *str)
 	return (n * minus);
 }
 
-// int main(int argc, char const *argv[])
-// {
-// 	printf("%d", ft_atoi("   -+-65141toto-645"));
-// 	return 0;
-// }
+int main(int argc, char const *argv[])
+{
+	printf("%d", ft_atoi("   -+-65141toto-645"));
+	return 0;
+}
